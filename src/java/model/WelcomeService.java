@@ -48,7 +48,7 @@ public class WelcomeService {
         this.timeOfDay = timeOfDay;
     }
     
-    public String findTimeOfTheDay(){
+    public final String findTimeOfTheDay(){
         hours = currentDate.getHour();
         if(hours < 11){
             timeOfDay = "Good Morning";
@@ -62,7 +62,10 @@ public class WelcomeService {
             
         return timeOfDay;
     }
-    public String getWelcomeMessage(String name){
+    public final String getWelcomeMessage(String name) throws IllegalArgumentException{
+        if(name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Please provide your name!");
+        }
         timeOfDay = findTimeOfTheDay();
         msg = timeOfDay + ", " + name + ". Welcome! ";
         return msg;
