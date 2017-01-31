@@ -7,4 +7,10 @@ and open the template in the editor.
     Created on : Jan 26, 2017, 12:15:40 PM
     Author     : linhdo
 */
-
+.line{height: 35px;
+       background: #F9E79F;
+        font-size: 20px;}
+.title{text-align: center;}
+.text{background: #F9E79F;
+       font-size: 50px;
+        text-transform: uppercase;}

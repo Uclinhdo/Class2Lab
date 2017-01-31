@@ -13,5 +13,26 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <table>
+            <%
+                for(int row = 0; row < 3 ; row++){
+              %>
+              <tr>
+                  <%
+                      for (int col = 0; col<3;col++){
+                  %>
+                  <td>
+                    xxx
+                  </td>
+                    <%
+                      }
+                      %>
+              </tr>
+                <%
+                  }
+                  %>
+              
+        </table>
+                  
     </body>
 </html>
