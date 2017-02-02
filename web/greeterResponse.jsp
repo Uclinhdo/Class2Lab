@@ -21,18 +21,9 @@
         <div class="container">
             <div class="row text">
                 <div class="col-sm-8 col-sm-offset-3 col-xs-12">
-                    <%
-                Object responseObj = request.getAttribute("resMsg");
-                Object errObj = request.getAttribute("errorMsg");
-                if (responseObj != null) {
-                    out.println(responseObj.toString());
-                }
-                if (errObj != null) {
-                    out.println(errObj.toString());
-                }
-                %>
+                     <h1>${resMsg}</h1>
                 </div>
-                
+               
             </div>
              
         </div>
